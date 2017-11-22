@@ -2,7 +2,7 @@
 
 ![](https://www.rd.com/wp-content/uploads/2016/04/06-cat-wants-to-tell-you-gift.jpg)
 
-Cento is a dependency hunter.
+Cento is a cute dependency hunter.
 
 Built with 💜 by [Riccardo Ancona](https://github.com/raasoft).
 
