@@ -3,6 +3,7 @@
 ![](https://www.rd.com/wp-content/uploads/2016/04/06-cat-wants-to-tell-you-gift.jpg)
 
 Cento is a cute dependency hunter.
+
 It will go out in the wild and will catch all the dependencies that you need for your project.
 
 Built with 💜 by [Riccardo Ancona](https://github.com/raasoft).
@@ -69,7 +70,7 @@ Put all the dependencies into the file `food.cento` in the project root. Example
 }
 ```
 
-Put http_proxy and https_proxy into `litter.cento` in the project root. If you think that _Cento_ does not need a litter, just leave those values empty. Example:
+Put http_proxy and https_proxy into `litter.cento` in the project root. If you think that _Cento_ **does not** need a litter, just leave those values **empty**. Example:
 
 ```
 {
