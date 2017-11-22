@@ -3,6 +3,7 @@
 ![](https://www.rd.com/wp-content/uploads/2016/04/06-cat-wants-to-tell-you-gift.jpg)
 
 Cento is a cute dependency hunter.
+It will go out in the wild and will catch all the dependencies that you need for your project.
 
 Built with 💜 by [Riccardo Ancona](https://github.com/raasoft).
 
