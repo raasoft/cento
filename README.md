@@ -68,7 +68,7 @@ Put all the dependencies into the file `food.cento` in the project root. Example
 }
 ```
 
-Put http_proxy and https_proxy (if necessary) into `litter.cento` in the project root, or feel free to not let _Cento_ use a litter. Example:
+Put http_proxy and https_proxy into `litter.cento` in the project root. If you think that _Cento_ does not need a litter, just leave those values empty. Example:
 
 ```
 {
