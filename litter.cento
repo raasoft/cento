@@ -1,0 +1,9 @@
+{
+    "http_proxy": {
+        "url": ""
+    },
+
+    "https_proxy": {
+        "url": ""
+    }
+}

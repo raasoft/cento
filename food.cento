@@ -1,0 +1,38 @@
+{
+    "Linaro Toolchain": {
+
+        "url": "https://releases.linaro.org/components/toolchain/binaries/5.3-2016.05/arm-linux-gnueabihf/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabihf.tar.xz", 
+        "md5": "https://releases.linaro.org/components/toolchain/binaries/5.3-2016.05/arm-linux-gnueabihf/runtime-gcc-linaro-5.3.1-2016.05-arm-linux-gnueabihf.tar.xz.asc", 
+        "download_folder": "./DependencyTemp/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabihf", 
+        "unzip_folder": "/opt/", 
+        "environment_variable": "LINARO_5_3_ARM_CROSSCOMPILE", 
+        "environment_variable_path": "/opt/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-"
+    },
+
+    "ARM Embedded Toolchain for Cortex M": {
+        "url": "https://launchpad.net/gcc-arm-embedded/4.8/4.8-2013-q4-major/+download/gcc-arm-none-eabi-4_8-2013q4-20131204-linux.tar.bz2", 
+        "md5": "https://launchpad.net/gcc-arm-embedded/4.8/4.8-2013-q4-major/+download/gcc-arm-none-eabi-4_8-2013q4-20131204-linux.tar.bz2/+md5", 
+        "download_folder": "./DependencyTemp/gcc-arm-none-eabi-4_8-2013q4-20131204-linux", 
+        "unzip_folder": "/opt/", 
+        "environment_variable": "ARM_CC_PATH", 
+        "environment_variable_path": "/opt/gcc-arm-none-eabi-4_8-2013q4"
+    },
+
+    "wkhtmltopdf": {
+        "url": "https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.4/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz", 
+        "md5": "https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.4/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz.md5", 
+        "download_folder": "./DependencyTemp/wkhtmltopdf", 
+        "unzip_folder": "/opt/", 
+        "environment_variable": "WKHTMLTOPDF", 
+        "environment_variable_path": "wkhtmltopdf"
+    },
+
+        "pandoc": {
+            "url": "https://github.com/jgm/pandoc/releases/download/2.0.3/pandoc-2.0.3-linux.tar.gz", 
+            "md5": "https://github.com/jgm/pandoc/releases/download/2.0.3/pandoc-2.0.3-linux.tar.gz.md5", 
+            "download_folder": "./DependencyTemp/pandoc", 
+            "unzip_folder": "/opt/", 
+            "environment_variable": "PANDOC", 
+            "environment_variable_path": "pandoc"
+    }
+}
