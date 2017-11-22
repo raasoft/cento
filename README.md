@@ -42,6 +42,8 @@ sudo python ./cento.py
 
 ## ⚙ Configuration
 
+_Cento_ needs **food** and a **litter**.
+
 Put all the dependencies into the file `food.cento` in the project root. Example:
 
 ```
@@ -66,7 +68,7 @@ Put all the dependencies into the file `food.cento` in the project root. Example
 }
 ```
 
-Put http_proxy and https_proxy into `litter.cento` in the project root. Example:
+Put http_proxy and https_proxy (if necessary) into `litter.cento` in the project root, or feel free to not let _Cento_ use a litter. Example:
 
 ```
 {
@@ -75,7 +77,7 @@ Put http_proxy and https_proxy into `litter.cento` in the project root. Example:
     },
 
     "https_proxy": {
-        "url": "http://user:pass@proxy:port"
+        "url": ""
     }
 }
 ```
