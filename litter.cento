@@ -1,6 +1,10 @@
 {
+    "comment": {
+        "text": "Those two proxies are null proxies"
+    },
+    
     "http_proxy": {
-        "url": ""
+        "url": "http://www.gmodules.com/ig/proxy?url=<span style="color: #ff6600;">http://example.com/</span>"
     },
 
     "https_proxy": {

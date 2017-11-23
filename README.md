@@ -1,6 +1,6 @@
 # Cento
 
-![](https://www.rd.com/wp-content/uploads/2016/04/06-cat-wants-to-tell-you-gift.jpg)
+![](https://trello-attachments.s3.amazonaws.com/599c08dd906987aa3757ac4f/5a1695fda465c341081bd8d7/f568c8323bbfb51857ebfa90a198d535/image.png)
 
 Cento is a cute dependency hunter.
 
