@@ -22,18 +22,19 @@
 import os
 import errno
 import collections
-import urlgrabber
 import hashlib
 import tarfile
 import contextlib
 from pyunpack import Archive
-import urlgrabber
-import urlgrabber.grabber as grabber
-from urlgrabber.grabber import URLGrabber, URLGrabError, CallbackObject, \
-     URLParser
-from urlgrabber.progress import text_progress_meter
+
+import urllib
+import progressbar
+
 import pyunpack
 import json
+
+
+
 
 ## Tool Configuration
 
@@ -102,6 +103,19 @@ def deflate(fname, outDir):
         print "        WARNING: Cannot unpack " + fname
 
 
+pbar = None
+def show_progress(block_num, block_size, total_size):
+    global pbar
+    if pbar is None:
+        pbar = progressbar.ProgressBar(maxval=total_size)
+
+    downloaded = block_num * block_size
+    if downloaded < total_size:
+        pbar.update(downloaded)
+    else:
+        pbar.finish()
+        pbar = None
+
 def UpdateDependency(dep):
     print "Collecting " + "'" + dep.name + "'"
 
@@ -129,14 +143,11 @@ def UpdateDependency(dep):
     http_proxy = os.environ.get('http_proxy',"")
     https_proxy = os.environ.get('https_proxy',"")
 
-    print http_proxy
-
-    ug = URLGrabber(progress_obj = text_progress_meter(), 
-        reget='simple', 
-        proxies={ 'http' : http_proxy, 'https' : https_proxy })
+    proxies = {'http': http_proxy, 'https': https_proxy}
+    ug = urllib.FancyURLopener(proxies)
 
     try:
-        f1 = ug.urlgrab(dep.md5, downloadPath, text="    Downloading "+dep.md5)
+        f1 = ug.retrieve(dep.md5, downloadPath, show_progress)
         md5IsAvaiable = True
     except:
         print "    Cannot check if the dependency is already installed. Proceeding installing it from scratch."
@@ -147,7 +158,7 @@ def UpdateDependency(dep):
         print "    The dependency is already installed. Skipping."
     else:
 
-        f2 = ug.urlgrab(dep.url, downloadPath, text="    Downloading "+dep.url)
+        f2 = ug.retrieve(dep.url, downloadPath, show_progress)
         print "    Saved in " + downloadPath
 
         ### Deflate
