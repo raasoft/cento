@@ -1,10 +1,13 @@
 # Cento
+[![forthebadge](http://forthebadge.com/images/badges/contains-cat-gifs.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/made-with-python.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
 ![](https://trello-attachments.s3.amazonaws.com/599c08dd906987aa3757ac4f/5a1695fda465c341081bd8d7/f568c8323bbfb51857ebfa90a198d535/image.png)
 
 Cento is a cute dependency hunter.
 
-It will go out in the wild and will catch all the dependencies that you need for your project.
+It will go out in the wild and will bring you all the dependencies that you need for your project.
 
 Built with 💜 by [Riccardo Ancona](https://github.com/raasoft).
 
