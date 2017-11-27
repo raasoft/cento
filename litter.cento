@@ -1,6 +1,6 @@
 {
     "comment": {
-        "text": "Those two proxies are null proxies"
+        "text": "Http_Proxy is set, while Https_Proxy is unset :)"
     },
     
     "http_proxy": {
